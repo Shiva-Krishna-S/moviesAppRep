@@ -11,6 +11,8 @@ const Account = props => {
     history.replace('/login')
   }
 
+  //   const username = localStorage.getItem('userName')
+
   return (
     <div className="account-background-container">
       <Header />
