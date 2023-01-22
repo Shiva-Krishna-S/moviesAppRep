@@ -36,7 +36,7 @@ class Header extends Component {
     const {history} = this.props
 
     if (searchPath !== '/search') {
-      history.replace('/search')
+      history.push('/search')
     } else {
       const {searchInput} = this.state
       const {searchMovies} = this.props

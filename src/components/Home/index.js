@@ -91,6 +91,10 @@ class Home extends Component {
     </div>
   )
 
+  onOriginalsTryAgain = () => {
+    this.getOriginalMovies()
+  }
+
   renderOriginalsFailureView = () => (
     <div className="movie-category-failure-view">
       <img
@@ -137,10 +141,6 @@ class Home extends Component {
       <Loader type="TailSpin" color="#D81F26" height={50} width={50} />
     </div>
   )
-
-  onOriginalsTryAgain = () => {
-    this.getOriginalMovies()
-  }
 
   renderRandomFailureView = () => (
     <div className="random-movie-failure-view">
